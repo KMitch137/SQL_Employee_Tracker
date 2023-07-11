@@ -1,7 +1,3 @@
-// WHAT IS THIS ALL FOR????
-
-
-
 // Import and require mysql2
 const mysql = require('mysql2');
 
@@ -17,3 +13,9 @@ const db = mysql.createConnection(
   },
   console.log(`Connected to the business_db database.`)
 );
+
+db.connect((err)=> {
+    if (err) throw err 
+});
+
+module.exports = db
