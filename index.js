@@ -41,11 +41,9 @@ inquirer.prompt([
     ]
   }
 ]).then((answers)=>{
-  console.log(answers)
-  if (answers === "view_departments"){
-    viewDepartments();
-}
+   init()
 });
+
 }
 
 
