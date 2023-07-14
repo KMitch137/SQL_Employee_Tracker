@@ -17,7 +17,7 @@ CREATE TABLE role (
   REFERENCES department(id)
 );
 
--- How do I pair id with manager id, "see homework"
+
 CREATE TABLE employee (
   id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
   first_name VARCHAR(30) NOT NULL,
